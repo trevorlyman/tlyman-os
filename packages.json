@@ -1,0 +1,17 @@
+{
+	"all": {
+		"include": {
+			"all": [
+                "btop",
+                "go"
+            ],
+			"dx": []
+		},
+		"exclude": {
+			"all": [
+				"zsh"
+			],
+			"dx": []
+		}
+	}
+}
