@@ -4,13 +4,23 @@ echo "::group:: ===$(basename "$0")==="
 
 set -ouex pipefail
 
+# Add package repos
+sudo dnf5 install -y dnf-plugins-core
+sudo dnf5 config-manager addrepo --from-repofile=https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+
+
 # Install Packages
 dnf5 -y install \
     btop \
-    go
+    dotnet-sdk-9.0 \
+    git \
+    golang \
+    htop \
+    neovim \
+    terraform
 
 
-# Remove PPackes
+# Remove Packes
 EXCLUDED_PACKAGES=(
     "android-tools" \
     "bcc" \
