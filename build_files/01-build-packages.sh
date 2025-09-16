@@ -11,6 +11,7 @@ sudo dnf5 config-manager addrepo --from-repofile=https://rpm.releases.hashicorp.
 
 # Install Packages
 dnf5 -y install \
+    age \
     btop \
     dotnet-sdk-9.0 \
     git \
@@ -18,6 +19,7 @@ dnf5 -y install \
     htop \
     neovim \
     terraform
+
 
 
 # Remove Packes
